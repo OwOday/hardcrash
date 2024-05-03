@@ -2,14 +2,11 @@ package hardcrash
 
 import "net/http"
 
-type HardCrashSignal interface {
-}
-
 type Tool interface { //previously "xyz", this time of event driven queue manager can be used for any tool
 	Reset()
 	//Next() int64
 	//Previous() int64
-	GetChannels() []chan HardCrashSignal
+	GetChannels() []chan any
 	GetGui() []byte
 	GetGuiFunctions() map[string]func(w http.ResponseWriter, r *http.Request)
 }
