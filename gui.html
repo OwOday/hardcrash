@@ -6,12 +6,6 @@
     <title>Goglitch</title>
     <meta charset="utf-8">
 </head>
-
-<body>
-This project currently has no input validation, please double check values that will be translated to printer
-coordinates. The creators and distributors of this application hold no responsibility if usage results in the damage
-of any equipment or property.
-</body>
 <div class="container">
     <div class="tabs" id="tabs">
         <script>
@@ -120,7 +114,7 @@ of any equipment or property.
     .tabs {
         position: relative;
         display: flex;
-        min-height: 300px;
+        height: 94vh;
         border-radius: 8px 8px 0 0;
         overflow: hidden;
     }
@@ -135,7 +129,7 @@ of any equipment or property.
         /* tab content must clear this */
         height: 40px;
 
-        padding: 10px;
+        padding: 5px;
         text-align: center;
         background: #9768D1;
         cursor: pointer;
@@ -155,7 +149,7 @@ of any equipment or property.
         /* clear the tab labels */
         top: 40px;
 
-        padding: 20px;
+        padding: 5px;
         border-radius: 0 0 8px 8px;
         background: #553285;
 
@@ -167,13 +161,14 @@ of any equipment or property.
         opacity: 0;
         transform: scale(0.1);
         transform-origin: top left;
-
+        height:100%
     }
 
     .goglitch-content img {
         float: left;
         margin-right: 20px;
         border-radius: 8px;
+        height: 100%
     }
 
 
@@ -199,13 +194,13 @@ of any equipment or property.
     /* BREAKPOINTS ----- */
     @media screen and (max-width: 767px) {
         .tabs {
-            min-height: 400px;
+            min-height:100%;
         }
     }
 
     @media screen and (max-width: 480px) {
         .tabs {
-            min-height: 580px;
+            min-height: 100%;
         }
 
         .goglitch-tab label {
@@ -213,7 +208,7 @@ of any equipment or property.
         }
 
         .goglitch-content {
-            top: 60px;
+            top: 0px;
         }
 
         .goglitch-content img {
@@ -228,7 +223,7 @@ of any equipment or property.
         color: AliceBlue;
         font: 16px sans-serif;
         text-align: center;
-        margin-top: 30px;
-        height: 95%;
+        margin-top: 5px;
+        height:auto;
     }
 </style>
